@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package modelo;
+package paquete2;
 
-import cliente.Comprador;
+import paquete1.Comprador;
 
 /**
  *
@@ -42,14 +42,13 @@ public class TipoSedan extends Comprador {
         porcentajeDescuento = n;
     }
 
-    public void establecerValorDescuento(double valorDescuento) {
+    public void establecerValorDescuento() {
         valorDescuento = precioBase * (porcentajeDescuento/100);
     }
 
-    public void establecerSeguroMecanico(double seguroMecanico) {
+    public void establecerSeguroMecanico() {
         seguroMecanico = precioBase * 0.01;
     }
-<<<<<<< HEAD
 
     public String obtenerMarca() {
         return marca;
@@ -59,6 +58,7 @@ public class TipoSedan extends Comprador {
         return precioBase;
     }
 
+    @Override
     public double obtenerPrecioFinal() {
         return precioFinal;
     }
@@ -87,8 +87,6 @@ public class TipoSedan extends Comprador {
     porcentajeDescuento, valorDescuento, seguroMecanico);
         return cadena;
     }
-=======
-    
-    
->>>>>>> d9a6cab919b87b084b4d9987c4aa266fa9ec0e2f
+
+
 }
