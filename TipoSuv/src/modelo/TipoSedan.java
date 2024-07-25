@@ -49,6 +49,7 @@ public class TipoSedan extends Comprador {
     public void establecerSeguroMecanico(double seguroMecanico) {
         seguroMecanico = precioBase * 0.01;
     }
+<<<<<<< HEAD
 
     public String obtenerMarca() {
         return marca;
@@ -86,4 +87,8 @@ public class TipoSedan extends Comprador {
     porcentajeDescuento, valorDescuento, seguroMecanico);
         return cadena;
     }
+=======
+    
+    
+>>>>>>> d9a6cab919b87b084b4d9987c4aa266fa9ec0e2f
 }
